@@ -1,0 +1,1 @@
+CREATE TABLE tarefas (_id INTEGER NOT NULL PRIMARY KEY, nome TEXT NOT NULL, descricao TEXT NOT NULL, npomodoros TEXT NOT NULL);

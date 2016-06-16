@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.fa7.layoutcardview.novaTarefaActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novaTarefaNome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+        android:hint="Titulo"
+        android:maxLength="10"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novaTarefaDescricao"
+        android:layout_below="@+id/novaTarefaNome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Descricao"
+        android:maxLength="12"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novaTarefaNumeroPomodoros"
+        android:layout_below="@+id/novaTarefaDescricao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Pomodoros"
+        android:maxLength="1"
+        android:phoneNumber="false"
+        android:selectAllOnFocus="false"
+        android:numeric="integer"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/novaTarefaBtnSalvar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:id="@+id/novaTarefaBtnExcluir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
